@@ -23,13 +23,33 @@
       <p class="rating-description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
       <div class="rating-buttons">
-        <button class="rating-input" onclick="setRating(1)">1</button>
+        <!-- <button class="rating-input" onclick="setRating(1)">1</button>
         <button class="rating-input" onclick="setRating(2)">2</button>
         <button class="rating-input" onclick="setRating(3)">3</button>
         <button class="rating-input" onclick="setRating(4)">4</button>
-        <button class="rating-input" onclick="setRating(5)">5</button>
+        <button class="rating-input" onclick="setRating(5)">5</button> -->
+        <label for="rating-1">
+          <input type="radio" name="radio" id="rating-1" onclick="setRating(1)" />
+          <span class="rating-input">1</span>
+        </label>
+        <label for="rating-2">
+          <input type="radio" name="radio" id="rating-2" onclick="setRating(2)" />
+          <span class="rating-input">2</span>
+        </label>
+        <label for="rating-3">
+          <input type="radio" name="radio" id="rating-3" onclick="setRating(3)" />
+          <span class="rating-input">3</span>
+        </label>
+        <label for="rating-4">
+          <input type="radio" name="radio" id="rating-4" onclick="setRating(4)" />
+          <span class="rating-input">4</span>
+        </label>
+        <label for="rating-5">
+          <input type="radio" name="radio" id="rating-5" onclick="setRating(5)" />
+          <span class="rating-input">5</span>
+        </label>
       </div>
-      
+
       <button class="rating-submit" onclick="submitRating()">SUBMIT</button>
 
     </div>

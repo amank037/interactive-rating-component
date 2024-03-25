@@ -71,7 +71,7 @@ body{
     justify-content: space-between;
     width: 100%;
 }
-.rating-buttons > .rating-input{
+.rating-buttons .rating-input{
     height:60px;
     width: 60px;
     font-size: 1.2rem;
@@ -83,13 +83,17 @@ body{
     display: flex;
     justify-content: center;
     transition: 0.2s ease;
+    cursor: pointer;
+}
+.rating-buttons input{
+    display: none;
+}
+.rating-buttons .rating-input:hover{
+    background-color: var(--Medium-Grey);
+    color: var(--White);
     cursor:pointer;
 }
-.rating-buttons > .rating-input:hover{
-    background-color: var(--Medium-Grey);
-    color: var(--White)
-}
-.rating-buttons> .rating-input:active{
+.rating-buttons input:checked + .rating-input{
     background-color: var(--Orange);
     color: var(--White);
 }
